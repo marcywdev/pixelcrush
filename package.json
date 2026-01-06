@@ -1,5 +1,5 @@
 {
-  "name": "image-dither-generator",
+  "name": "pixelcrush",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "gif.js-upgrade": "^0.2.1",
     "next": "16.1.1",
+    "next-themes": "^0.4.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
