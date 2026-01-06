@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# pixelcrush
 
-## Getting Started
+Turn your photos into glorious, crunchy pixel art. pixelcrush is a browser-based tool that applies dithering algorithms to images, giving them that retro, low-color aesthetic we all secretly love.
 
-First, run the development server:
+## What it does
+
+Upload any image and watch it transform into pixel art using classic dithering techniques. Customize the color palette, adjust the pixel size, and export your creation as a PNG or animated GIF.
+
+## Features
+
+**Dithering Algorithms**
+- Floyd-Steinberg: The classic error-diffusion algorithm that creates smooth gradients with that signature organic dither pattern
+- Ordered (Bayer): A structured 4x4 matrix approach that produces clean, grid-like patterns
+
+**Color Palette**
+- Start with the default palette or build your own
+- Drag colors to reorder them
+- Click any color to edit or remove it
+- Add as many colors as you want (or as few as two for that hardcore 1-bit look)
+
+**Palette Modes**
+- Nearest Match: Each pixel gets mapped to the closest color in your palette
+- Luminance Mapping: Colors are assigned based on brightness - first color for darks, last for lights
+- Horizontal Gradient: Palette flows left to right across the image
+- Vertical Gradient: Palette flows top to bottom
+
+**Pixel Size**
+- Crank it down for chunky, blocky pixels
+- Keep it high for subtle dithering on full resolution
+
+**GIF Creator**
+- Capture frames at different settings
+- Reorder frames by dragging
+- Adjust timing between frames
+- Preview before downloading
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and start crushing some pixels.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Built with
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- gif.js for client-side GIF encoding
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
