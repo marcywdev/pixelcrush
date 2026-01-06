@@ -1,6 +1,10 @@
 # pixelcrush
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmarcywdev%2Fpixelcrush)
+
 Turn your photos into glorious, crunchy pixel art. pixelcrush is a browser-based tool that applies dithering algorithms to images, giving them that retro, low-color aesthetic we all secretly love.
+
+**Live demo:** [pixelcrush-phi.vercel.app](https://pixelcrush-phi.vercel.app)
 
 ## What it does
 
