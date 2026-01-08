@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "pixelcrush",
+  title: "pxlcrush",
   description: "Create dithered pixel art with custom color palettes and export as GIF",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.gif",
   },
 };
 
