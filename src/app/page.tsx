@@ -14,9 +14,10 @@ const VALID_SAMPLES: Record<string, string> = {
   'pj.jpg': '/samples/pj.jpg',
   'on-air.jpg': '/samples/on-air.jpg',
   'rocky3.jpg': '/samples/rocky3.jpg',
-  'rocky1.jpg': '/samples/rocky1.jpg',
-  'rocky2.jpg': '/samples/rocky2.jpg',
+  'desert.jpg': '/samples/desert.jpg',
   'portland.jpg': '/samples/portland.jpg',
+  'pdx.jpg': '/samples/pdx.jpg',
+  'heart.gif': '/samples/heart.gif',
 };
 
 // Preset color palettes
