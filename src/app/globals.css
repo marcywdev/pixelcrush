@@ -68,6 +68,30 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* Color input styling */
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 0.5rem;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
+}
+
 /* Animations */
 @keyframes colorShift {
   0%, 100% { background-color: var(--color-brand-peach); }
