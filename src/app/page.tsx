@@ -289,7 +289,7 @@ export default function DitherTool() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
-      const stored = localStorage.getItem('pixelcrush-user-presets');
+      const stored = localStorage.getItem('pxlcrush-user-presets');
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed)) {
@@ -341,7 +341,7 @@ export default function DitherTool() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
-      localStorage.setItem('pixelcrush-user-presets', JSON.stringify(userPresets));
+      localStorage.setItem('pxlcrush-user-presets', JSON.stringify(userPresets));
     } catch (e) {
       console.warn('Failed to save presets to localStorage:', e);
     }
@@ -661,7 +661,7 @@ export default function DitherTool() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'pixelcrush-presets.json';
+    link.download = 'pxlcrush-presets.json';
     link.click();
     URL.revokeObjectURL(url);
   }, [userPresets]);
@@ -902,7 +902,7 @@ export default function DitherTool() {
             fontFamily: "var(--font-alt)",
           }}
         >
-          pixelcrush
+          pxlcrush
         </h1>
 
         {/* Tab Navigation */}
